@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Балацан](https://up.htmlacademy.ru/adaptive/21/user/1496867).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Пудников](https://htmlacademy.ru/profile/id71418).
 
 ---
 
