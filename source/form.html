@@ -38,34 +38,26 @@
       <section class="cat-profile">
         <div class="cat-profile__wrapper">
           <p class="cat-profile__title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <form class="inform__nickname">
+          <form class="inform__block">
             <label class="form__desc" for="nickname-field">Имя:<sup>*</sup></label>
-            <input class="form__data" type="text" name="nickname" id="nickname-field" required><br>
+            <input class="form__data" type="text" name="nickname" id="nickname-field" placeholder="БАРСИК" required><br>
             <label class="form__desc" for="weight-field">Вес(кг):<sup>*</sup></label>
-            <input class="form__data" type="number" name="weight" id="weight-field" required><br>
+            <input class="form__data" type="number" name="weight" id="weight-field" placeholder="7" required><br>
             <label class="form__desc" for="age-field">Возраст (лет):</label>
-            <input class="form__data" type="number" name="age" id="age-field"><br>
-          </form>
-          <form class="inform__diet">
-            <input class="form__radio" type="radio" name="program-selection" id="weight-loss-field">
+            <input class="form__data" type="number" name="age" id="age-field" placeholder="7"><br>
+            <input class="form__radio" type="radio" name="program-selection" id="weight-loss-field" value="weight-loss">
             <label class="form__desc" for="weight-loss-field">Похудение</label><br>
-            <input class="form__radio" type="radio" name="program-selection" id="weight-gain-field">
+            <input class="form__radio" type="radio" name="program-selection" id="weight-gain-field"  value="weight-gain">
             <label class="form__desc" for="weight-gain-field">Набор массы</label><br>
-            <input class="form__radio" type="radio" name="program-selection" id="advice-field">
+            <input class="form__radio" type="radio" name="program-selection" id="advice-field"  value="help">
             <label class="form__desc" for="advice-field">Не знаю (нужен ваш совет)</label><br>
-          </form>
-          <form class="inform__owner">
             <h2 class="form__subtitle">Контактные данные (владельца кота)</h2>
             <label class="form__desc" for="email-field">E-mail:<sup>*</sup></label>
-            <input class="form__data" type="email" name="" value="kuklachev@gmail.com" id="email-field" required><br>
+            <input class="form__data" type="email" name="email"  placeholder="kuklachev@gmail.com" id="email-field" required><br>
             <label class="form__desc" for="tel-field">Телефон:<sup>*</sup></label>
-            <input class="form__data" type="tel" name="" value="8 (960) 900-60-90" id="tel-field" required><br>
-          </form>
-          <form class="inform-comment">
+            <input class="form__data" type="tel" name="phone"  placeholder="8 (960) 900-60-90" id="tel-field" required><br>
             <h2  class="form__subtitle">Коментарий</h2>
-            <textarea>Расскажите обо всех повадках кота</textarea>
-          </form>
-          <form class="inform__additionally">
+            <textarea  placeholder="Расскажите обо всех повадках кота"></textarea>
             <h2  class="form__subtitle">Дополнительно</h2>
             <input class="form__checkbox" type="checkbox" name="additionally" value="sweetener" id="sweetener-field" checked>
             <label class="form__desc" for="sweetener-field">сахарозаменитель</label><br>
@@ -75,9 +67,7 @@
             <label class="form__desc" for="milk-field">молоко</label><br>
             <input class="form__checkbox" type="checkbox" name="additionally" value="vitamins" id="vitamins-field">
             <label class="form__desc" for="vitamins-field">витамины</label><br>
-          </form>
-          <form class="inform__button">
-            <input type="submit" name="" value="отправить заявку">
+            <button class="button" type="submit">отправить заявку</button>
           </form>
           <p class="mandatory__subheading"><sup>*</sup> — Обязательные поля</p>
         </div>
