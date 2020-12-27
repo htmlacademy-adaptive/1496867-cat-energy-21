@@ -1,0 +1,139 @@
+.page-header{
+  .center;
+  width: 320px;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  .page-header:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+}
+.main-nav {
+  .font__size (20px, 20px);
+  font-weight: 500;
+  margin: 0;
+  background-color: @basic-white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+}
+.main-nav__list {
+  .li-none;
+}
+.site-list__link{
+  .a-none (@title_color);
+}
+.site-list__link:hover{
+  opacity: 0.6;
+}
+.site-list__link:active{
+  opacity: 0.3;
+}
+.page-header__logo {
+  flex: 0 0 38px;
+  overflow: hidden;
+  z-index: 3;
+}
+.page-header__logo img {
+  max-width: 100%;
+  display: block;
+}
+.header__burger {
+  display: none;
+}
+.header__menu {}
+.main-nav__list {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 767px){
+  .main-nav {
+    height: 66px;
+  }
+  .page-header__logo {
+    flex: 0 0 40px;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 16px;
+    z-index: 3;
+  }
+  .header__burger span{
+    position: absolute;
+    background-color: @title_color;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 7px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:before,
+  .header__burger:after{
+    content: '';
+    background-color: @title_color;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:before{
+    top: 0;
+  }
+  .header__burger:after{
+    bottom: 0;
+  }
+  .header__burger.active span{
+    transform: scale(0);
+  }
+  .header__burger.active:before{
+    transform: rotate(45deg);
+    top: 7px;
+  }
+  .header__burger.active:after{
+    transform: rotate(-45deg);
+    bottom: 7px;
+  }
+  .header__menu {
+    position: fixed;
+    top: -100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 66px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__menu.active{
+    top: 0;
+  }
+  .main-nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+  }
+  .site-list__item{
+    display: inline-block;
+    border-top: 2px solid @border-bottem;
+    width: 320px;
+  }
+  .site-list__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom:24px;
+  }
+}

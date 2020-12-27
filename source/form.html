@@ -2,25 +2,28 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo logo" href=""><img class="logo__img" src="https://via.placeholder.com/150x150">Cat energy
-      </a>
       <nav class="main-nav">
+        <a class="page-header__logo logo" href=""><img class="logo__img" src="https://via.placeholder.com/150x150"  alt="Cat energy">
+        </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
@@ -34,7 +37,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1>Подбор программы</h1>
+      <h1 class="main-form__title">Подбор программы</h1>
       <section class="cat-profile">
         <div class="cat-profile__wrapper">
           <p class="cat-profile__title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
@@ -46,11 +49,11 @@
             <label class="form__desc" for="age-field">Возраст (лет):</label>
             <input class="form__data" type="number" name="age" id="age-field" placeholder="7"><br>
             <input class="form__radio" type="radio" name="program-selection" id="weight-loss-field" value="weight-loss">
-            <label class="form__desc" for="weight-loss-field">Похудение</label><br>
+            <label class="form__desc form__desc--color" for="weight-loss-field">Похудение</label><br>
             <input class="form__radio" type="radio" name="program-selection" id="weight-gain-field"  value="weight-gain">
-            <label class="form__desc" for="weight-gain-field">Набор массы</label><br>
+            <label class="form__desc form__desc--color" for="weight-gain-field">Набор массы</label><br>
             <input class="form__radio" type="radio" name="program-selection" id="advice-field"  value="help">
-            <label class="form__desc" for="advice-field">Не знаю (нужен ваш совет)</label><br>
+            <label class="form__desc form__desc--color" for="advice-field">Не знаю (нужен ваш совет)</label><br>
             <h2 class="form__subtitle">Контактные данные (владельца кота)</h2>
             <label class="form__desc" for="email-field">E-mail:<sup>*</sup></label>
             <input class="form__data" type="email" name="email"  placeholder="kuklachev@gmail.com" id="email-field" required><br>
@@ -60,13 +63,13 @@
             <textarea  placeholder="Расскажите обо всех повадках кота"></textarea>
             <h2  class="form__subtitle">Дополнительно</h2>
             <input class="form__checkbox" type="checkbox" name="additionally" value="sweetener" id="sweetener-field" checked>
-            <label class="form__desc" for="sweetener-field">сахарозаменитель</label><br>
+            <label class="form__desc form__desc--color-add" for="sweetener-field">сахарозаменитель</label><br>
             <input class="form__checkbox" type="checkbox" name="additionally" value="water" id="water-field">
-            <label class="form__desc" for="water-field">питьевая вода</label><br>
+            <label class="form__desc form__desc--color-add" for="water-field">питьевая вода</label><br>
             <input class="form__checkbox" type="checkbox" name="additionally" value="milk" id="milk-field">
-            <label class="form__desc" for="milk-field">молоко</label><br>
+            <label class="form__desc form__desc--color-add" for="milk-field">молоко</label><br>
             <input class="form__checkbox" type="checkbox" name="additionally" value="vitamins" id="vitamins-field">
-            <label class="form__desc" for="vitamins-field">витамины</label><br>
+            <label class="form__desc form__desc--color-add" for="vitamins-field">витамины</label><br>
             <button class="button" type="submit">отправить заявку</button>
           </form>
           <p class="mandatory__subheading"><sup>*</sup> — Обязательные поля</p>
@@ -74,7 +77,7 @@
       </section>
       <footer class="page-footer">
         <div class="footer__wrapper">
-          <div class="footer__inform">
+          <div class="footer__inform footer__inform--dark">
             <b class="inform__title">приглашаем к сотрудничеству дилеров!</b>
             <p class="inform__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>

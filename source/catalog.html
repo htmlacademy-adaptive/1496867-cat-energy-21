@@ -2,30 +2,33 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo logo" href=""><img class="logo__img" src="https://via.placeholder.com/150x150">Cat energy
-      </a>
       <nav class="main-nav">
+        <a class="page-header__logo logo" href=""><img class="logo__img" src="https://via.placeholder.com/150x150" alt="Cat energy">
+        </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link">
                 Каталог продукции
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">
+              <a class="site-list__link" href="form.html">
                 Подбор программы
               </a>
             </li>
@@ -34,12 +37,12 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1>Каталог продукции</h1>
+      <h1 class="main-catalog__title">Каталог продукции</h1>
       <section class="product">
         <div>
           <h2 class="visually-hidden">Продукты</h2>
-          <ul>
-            <li>
+          <ul class="product__list">
+            <li class="product__item">
               <a href="#">
                 <img src="https://via.placeholder.com/150x150">
               </a>
@@ -63,7 +66,7 @@
               </div>
               <a class="product-button" href="#">Заказать</a>
             </li>
-            <li>
+            <li class="product__item">
               <a href="#">
                 <img src="https://via.placeholder.com/150x150">
               </a>
@@ -87,7 +90,7 @@
               </div>
               <a class="product-button" href="#">Заказать</a>
             </li>
-            <li>
+            <li class="product__item">
               <a href="#">
                 <img src="https://via.placeholder.com/150x150">
               </a>
@@ -111,7 +114,7 @@
               </div>
               <a class="product-button" href="#">Заказать</a>
             </li>
-            <li>
+            <li class="product__item">
               <a href="#">
                 <img src="https://via.placeholder.com/150x150">
               </a>
@@ -135,7 +138,7 @@
               </div>
               <a class="product-button" href="#">Заказать</a>
             </li>
-            <li>
+            <li class="product__item">
               <a href="#">
                 <img src="https://via.placeholder.com/150x150">
               </a>
@@ -159,7 +162,7 @@
               </div>
               <a class="product-button" href="#">Заказать</a>
             </li>
-            <li>
+            <li class="product__item">
               <a href="#">
                 <img src="https://via.placeholder.com/150x150">
               </a>
@@ -183,7 +186,7 @@
               </div>
               <a class="product-button" href="#">Заказать</a>
             </li>
-            <li>
+            <li class="product__item">
               <a href="#">
                 <img src="https://via.placeholder.com/150x150">
               </a>
@@ -219,8 +222,8 @@
       <section class="additional-goods">
         <div>
           <h2 class="additional-goods__title">Дополнительные товары</h2>
-          <ul>
-            <li>
+          <ul class="additional-goods__list">
+            <li class="additional-goods__item">
               <p class="additional-goods__subtitle">Сахарозаменитель</p>
               <div class="product-details details">
                 <p class="details-row">
@@ -230,7 +233,7 @@
               </div>
               <a class="product-button" href="#">Заказать</a>
             </li>
-            <li>
+            <li class="additional-goods__item">
               <p class="additional-goods__subtitle">Питьевая вода</p>
               <div class="product-details details">
                 <p class="details-row">
@@ -240,7 +243,7 @@
               </div>
               <a class="product-button" href="#">Заказать</a>
             </li>
-            <li>
+            <li class="additional-goods__item">
               <p class="additional-goods__subtitle">Молоко</p>
               <div class="product-details details">
                 <p class="details-row">
@@ -250,7 +253,7 @@
               </div>
               <a class="product-button" href="#">Заказать</a>
             </li>
-            <li>
+            <li class="additional-goods__item">
               <p class="additional-goods__subtitle">Витамины</p>
               <div class="product-details details">
                 <p class="details-row">
@@ -291,6 +294,7 @@
           <div class="page-footer__copyright copyright">
             <b>HTML Academy</b>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="" alt="HTML Academy"></a>
+
           </div>
         </div>
       </footer>

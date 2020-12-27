@@ -1,1 +1,39 @@
 // Начните писать стили здесь
+@import "colors";
+@import "font";
+@import "vars";
+@import "mixins";
+@import "button";
+@import "base/layout";
+
+// blocks index
+@import "navigation";
+@import "diet";
+@import "description";
+@import "example";
+@import "footer";
+
+// blocks form
+@import "cat-profile";
+// blocks catalog
+@import "product";
+body {
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 400;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+.page-main{.center;}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

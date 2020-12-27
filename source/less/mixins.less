@@ -1,0 +1,49 @@
+.center {
+  @media(max-width: 768px){
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  @media(min-width: 1280px){
+
+  }
+
+}
+.unpadding {
+  padding: 0;
+  margin: 0;
+}
+
+.a-none (@color){
+  text-decoration: none;
+  color: @color;
+  text-transform: uppercase;
+}
+
+.li-none{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.a-active (@color){
+  &:hover,
+  &:focus{
+    outline: 0;
+    background-color: @color;
+  }
+  &:active{
+    background-color: @color;
+    opacity: 0.3;
+  }
+}
+.font__arial {
+  font-family: Arial, sans-serif;
+}
+.font__size (@font-size, @line-height){
+  font-size: @font-size;
+  line-height: @line-height;
+}
+.size (@width-size, @height-size){
+  width: @width-size;
+  height: @height-size;
+}
