@@ -1,0 +1,47 @@
+.main-form__title{
+  color: @title_color;
+  font-weight: 400;
+}
+.cat-profile__title{
+  color: @title_color;
+  text-transform: uppercase;
+}
+.form__desc, .form__data {
+  color: @special_dark-grey;
+  text-transform: uppercase;
+}
+.form__desc--color{
+  color: @special_dark-grey-add;
+}
+.form__subtitle {
+  color: @title_color;
+}
+.form__desc__color-add {
+  color: @title_color;
+}
+@media (max-width: 767px){
+  .cat-data__list{
+    .li-none;
+  }
+  .main-form__title{
+    .font__size(36px, 36px);
+    margin-top: 27px;
+    margin-bottom: 37px;
+  }
+  .cat-profile__title{
+    .font__size(14px, 18px);
+    margin-top: 0;
+    margin-bottom: 39px;
+  }
+  .form__desc, .form__data {
+    .font__size(14px, 18px);
+  }
+  .form__data{
+    height: 46px;
+    padding: 10px 30px;
+    width: 100%;
+  }
+  .form__subtitle {
+    .font__size(24px, 26px);
+  }
+}

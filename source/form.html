@@ -4,18 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
       <nav class="main-nav">
-        <a class="page-header__logo logo" href=""><img class="logo__img" src="https://via.placeholder.com/150x150"  alt="Cat energy">
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
+        <a class="page-header__logo logo" href=""><img class="logo__img" src="img/logo-mobile.png" alt="Cat energy"></a>
+          <!-- <picture>
+            <source srcset="https://via.placeholder.com/768x768 768w">
+            <source srcset="https://via.placeholder.com/480x480 480w">
+            <img src="https://via.placeholder.com/320x320" alt="logo">
+          </picture> -->
+        <div class="header__burger">
+          <span></span>
+        </div>
+        <div class="header__menu">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link" href="index.html">
@@ -42,12 +46,14 @@
         <div class="cat-profile__wrapper">
           <p class="cat-profile__title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="inform__block">
-            <label class="form__desc" for="nickname-field">Имя:<sup>*</sup></label>
-            <input class="form__data" type="text" name="nickname" id="nickname-field" placeholder="БАРСИК" required><br>
-            <label class="form__desc" for="weight-field">Вес(кг):<sup>*</sup></label>
-            <input class="form__data" type="number" name="weight" id="weight-field" placeholder="7" required><br>
-            <label class="form__desc" for="age-field">Возраст (лет):</label>
-            <input class="form__data" type="number" name="age" id="age-field" placeholder="7"><br>
+            <ul class="cat-data__list">
+              <li class="cat-data__item"><label class="form__desc" for="nickname-field">Имя:<sup>*</sup></label>
+              <input class="form__data" type="text" name="nickname" id="nickname-field" placeholder="БАРСИК" required></li>
+              <li class="cat-data__item"><label class="form__desc" for="weight-field">Вес(кг):<sup>*</sup></label>
+              <input class="form__data" type="number" name="weight" id="weight-field" placeholder="7" required></li>
+              <li class="cat-data__item"><label class="form__desc" for="age-field">Возраст (лет):</label>
+              <input class="form__data" type="number" name="age" id="age-field" placeholder="7"></li>
+            </ul>
             <input class="form__radio" type="radio" name="program-selection" id="weight-loss-field" value="weight-loss">
             <label class="form__desc form__desc--color" for="weight-loss-field">Похудение</label><br>
             <input class="form__radio" type="radio" name="program-selection" id="weight-gain-field"  value="weight-gain">
@@ -63,42 +69,42 @@
             <textarea  placeholder="Расскажите обо всех повадках кота"></textarea>
             <h2  class="form__subtitle">Дополнительно</h2>
             <input class="form__checkbox" type="checkbox" name="additionally" value="sweetener" id="sweetener-field" checked>
-            <label class="form__desc form__desc--color-add" for="sweetener-field">сахарозаменитель</label><br>
+            <label class="form__desc form__desc__color-add" for="sweetener-field">сахарозаменитель</label><br>
             <input class="form__checkbox" type="checkbox" name="additionally" value="water" id="water-field">
-            <label class="form__desc form__desc--color-add" for="water-field">питьевая вода</label><br>
+            <label class="form__desc form__desc__color-add" for="water-field">питьевая вода</label><br>
             <input class="form__checkbox" type="checkbox" name="additionally" value="milk" id="milk-field">
-            <label class="form__desc form__desc--color-add" for="milk-field">молоко</label><br>
+            <label class="form__desc form__desc__color-add" for="milk-field">молоко</label><br>
             <input class="form__checkbox" type="checkbox" name="additionally" value="vitamins" id="vitamins-field">
-            <label class="form__desc form__desc--color-add" for="vitamins-field">витамины</label><br>
+            <label class="form__desc form__desc__color-add" for="vitamins-field">витамины</label><br>
             <button class="button" type="submit">отправить заявку</button>
           </form>
           <p class="mandatory__subheading"><sup>*</sup> — Обязательные поля</p>
         </div>
       </section>
-      <footer class="page-footer">
+            <footer class="page-footer">
+        <div class="footer__inform footer__index">
+          <b class="inform__title">Приглашаем к сотрудничеству дилеров!</b>
+          <p class="inform__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <img class="map__image" src="" width="320" height="362">
         <div class="footer__wrapper">
-          <div class="footer__inform footer__inform--dark">
-            <b class="inform__title">приглашаем к сотрудничеству дилеров!</b>
-            <p class="inform__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          </div>
-          <img class="map__image" src="">
-          <img class="footer__logo" src="">
+          <img class="footer__logo" src="" width="128" height="24">
           <div class="page-footer__social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="">Мы в Вконтакте</a>
+                <a class="social__link social__link--vkontakte" href=""><img src="" alt="Мы в Вконтакте" width="22" height="13"></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="">Мы в Инстаграме</a>
+                <a class="social__link social__link--instagram" href=""><img src="" alt=" Мы в Инстаграме" width="16" height="16"></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="">Мы в Фейсбуке</a>
+                <a class="social__link social__link--facebook" href=""><img src="" alt="Мы в Фейсбуке" width="22" height="22"></a>
               </li>
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
             <b>HTML Academy</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="" alt="HTML Academy"></a>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="" alt="HTML Academy" width="27" height="34"></a>
           </div>
         </div>
       </footer>
