@@ -12,33 +12,33 @@
 </head>
   <body class="page-body">
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="mobiel-header">
-          <a class="page-header__logo logo" href="index.html"><img class="logo__img" src="img/logo-mobile.png" alt="logo energy"></a>
+      <nav class="navigation">
+        <div class="navigation__block-icons">
+          <a class="navigation__logo logo" href=""><img class="logo__img" src="img/logo-mobile.png" alt="logo energy"></a>
             <!-- <picture>
               <source srcset="https://via.placeholder.com/768x768 768w">
               <source srcset="https://via.placeholder.com/480x480 480w">
               <img src="https://via.placeholder.com/320x320" alt="logo">
             </picture> -->
-          <img class="logo-text__img" src="#" alt="Cat energy" width="101" height="18">
-          <div class="header__burger">
+          <img class="navigation__logo-text" src="https://via.placeholder.com/150x150" alt="Cat energy" width="101" height="18">
+          <div class="navigation__burger">
             <span></span>
           </div>
         </div>
-        <div class="header__menu">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
+        <div class="site-navigation">
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="catalog.html">
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--active" href="#">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link site-navigation__link--active">
                 Подбор программы
               </a>
             </li>
@@ -47,129 +47,129 @@
       </nav>
     </header>
     <main class="page-main">
+      <h1 class="page-main__title-form">Подбор программы</h1>
       <section class="cat-profile">
         <div class="cat-profile__wrapper">
-          <h1 class="main-form__title">Подбор программы</h1>
           <p class="cat-profile__title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         </div>
-        <form class="inform__block">
-          <div class="cat-data__wrapper">
+        <form class="cat-profile__inform-block">
+          <div class="cat-data">
             <ul class="cat-data__list">
-              <li class="cat-data__item"><label class="form__desc" for="nickname-field">Имя:*</label>
-              <input class="form__data" type="text" name="nickname" id="nickname-field" placeholder="БАРСИК" required></li>
-              <li class="cat-data__item"><label class="form__desc" for="weight-field">Вес&#xA0;(кг):*</label>
-              <input class="form__data" type="number" name="weight" id="weight-field" placeholder="7" required></li>
-              <li class="cat-data__item"><label class="form__desc" for="age-field">Возраст&#xA0;(лет):</label>
-              <input class="form__data" type="number" name="age" id="age-field" placeholder="7"></li>
+              <li class="cat-data__item"><label class="cat-data__form-desc" for="nickname-field">Имя:*</label>
+              <input class="cat-data__form-data" type="text" name="nickname" id="nickname-field" placeholder="БАРСИК" required></li>
+              <li class="cat-data__item"><label class="cat-data__form-desc" for="weight-field">Вес&#xA0;(кг):*</label>
+              <input class="cat-data__form-data" type="number" name="weight" id="weight-field" placeholder="7" required></li>
+              <li class="cat-data__item"><label class="cat-data__form-desc" for="age-field">Возраст&#xA0;(лет):</label>
+              <input class="cat-data__form-data" type="number" name="age" id="age-field" placeholder="7"></li>
             </ul>
           </div>
-          <div class="program-selection__wrapper">
+          <div class="program-selection">
             <ul class="program-selection__list">
               <li class="program-selection__item">
-                <input class="form__radio" type="radio" name="program-selection" id="weight-loss-field" value="weight-loss" checked>
-                <span class="radio__icon"></span>
-                <label class="form__desc form__desc--color" for="weight-loss-field">Похудение</label>
+                <input class="program-selection__form-radio" type="radio" name="program-selection" id="weight-loss-field" value="weight-loss" checked>
+                <span class="program-selection__radio-icon"></span>
+                <label class="program-selection__form-desc program-selection__form-desc--color" for="weight-loss-field">Похудение</label>
               </li>
               <li class="program-selection__item">
-                <input class="form__radio" type="radio" name="program-selection" id="weight-gain-field"  value="weight-gain">
-                <span class="radio__icon"></span>
-                <label class="form__desc form__desc--color" for="weight-gain-field">Набор массы</label>
+                <input class="program-selection__form-radio" type="radio" name="program-selection" id="weight-gain-field"  value="weight-gain">
+                <span class="program-selection__radio-icon"></span>
+                <label class="program-selection__form-desc program-selection__form-desc--color" for="weight-gain-field">Набор массы</label>
               </li>
               <li class="program-selection__item">
-                <input class="form__radio" type="radio" name="program-selection" id="advice-field"  value="help">
-                <span class="radio__icon"></span>
-                <label class="form__desc form__desc--color" for="advice-field">Не знаю (нужен ваш совет)</label><br>
+                <input class="program-selection__form-radio" type="radio" name="program-selection" id="advice-field"  value="help">
+                <span class="program-selection__radio-icon"></span>
+                <label class="program-selection__form-desc program-selection__form-desc--color" for="advice-field">Не знаю (нужен ваш совет)</label><br>
               </li>
             </ul>
           </div>
-          <div class="line-date__wrapper">
-            <div class="line__date">
-              <div class="box">
-                <h2 class="form__subtitle form__subtitle--position-date">Контактные данные (владельца кота)</h2>
+          <div class="title-line">
+            <div class="title-line__wrapper">
+              <div class="title-line__shell-text">
+                <h2 class="title-line__text title-line__text--position-date">Контактные данные (владельца кота)</h2>
               </div>
-              <div class="middle__line"></div>
+              <div class="title-line__line"></div>
             </div>
           </div>
-          <div class="feedback__wrapper">
+          <div class="feedback">
             <ul class="feedback__list">
               <li class="feedback__item">
-                <label class="form__desc" for="email-field">E&minus;mail:<sup>*</sup></label>
-                <input class="form__data" type="email" name="email"  placeholder="kuklachev@gmail.com" id="email-field" required>
+                <label class="feedback__form-desc" for="email-field">E&minus;mail:<sup>*</sup></label>
+                <input class="feedback__form-data" type="email" name="email"  placeholder="kuklachev@gmail.com" id="email-field" required>
               </li>
               <li class="feedback__item">
-                <label class="form__desc" for="tel-field">Телефон:<sup>*</sup></label>
-                <input class="form__data" type="tel" name="phone"  placeholder="8 (960) 900-60-90" id="tel-field" required>
+                <label class="feedback__form-desc" for="tel-field">Телефон:<sup>*</sup></label>
+                <input class="feedback__form-data" type="tel" name="phone"  placeholder="8 (960) 900-60-90" id="tel-field" required>
               </li>
             </ul>
           </div>
-          <div class="line-date__wrapper">
-            <div class="line__date">
-              <h2  class="form__subtitle form__subtitle--position-commit">Коментарий</h2>   <div class="middle__line"></div>
+          <div class="title-line">
+            <div class="title-line__wrapper">
+              <h2  class="title-line__text title-line__text--position-commit">Коментарий</h2>   <div class="title-line__line"></div>
             </div>
           </div>
-          <div class="commit__wrapper">
+          <div class="commit">
             <textarea class="commit__text" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
-          <div class="line-date__wrapper">
-            <div class="line__date">
-              <h2  class="form__subtitle form__subtitle--position-add">Дополнительно</h2>
-              <div class="middle__line"></div>
+          <div class="title-line">
+            <div class="title-line__wrapper">
+              <h2  class="title-line__text title-line__text--position-add">Дополнительно</h2>
+              <div class="title-line__line"></div>
             </div>
           </div>
-          <div class="checkbox__wrapper">
+          <div class="checkbox">
             <ul class="checkbox__list">
               <li class="checkbox__item">
-                <input class="form__checkbox" type="checkbox" name="additionally" value="sweetener" id="sweetener-field" checked>
+                <input class="checkbox__form" type="checkbox" name="additionally" value="sweetener" id="sweetener-field" checked>
                 <span class="checkbox__icon"></span>
-                <label class="form__desc form__desc__color-add" for="sweetener-field">сахарозаменитель</label>
+                <label class="checkbox__form-desc checkbox__form-desc--color-add" for="sweetener-field">сахарозаменитель</label>
               </li>
               <li class="checkbox__item">
-                <input class="form__checkbox" type="checkbox" name="additionally" value="water" id="water-field">
+                <input class="checkbox__form" type="checkbox" name="additionally" value="water" id="water-field">
                 <span class="checkbox__icon"></span>
-                <label class="form__desc form__desc__color-add" for="water-field">питьевая вода</label>
+                <label class="checkbox__form-desc checkbox__form-desc--color-add" for="water-field">питьевая вода</label>
               </li>
               <li class="checkbox__item">
-                <input class="form__checkbox" type="checkbox" name="additionally" value="milk" id="milk-field">
+                <input class="checkbox__form" type="checkbox" name="additionally" value="milk" id="milk-field">
                 <span class="checkbox__icon"></span>
-                <label class="form__desc form__desc__color-add" for="milk-field">молоко</label>
+                <label class="checkbox__form-desc checkbox__form-desc--color-add" for="milk-field">молоко</label>
               </li>
               <li class="checkbox__item">
-                <input class="form__checkbox" type="checkbox" name="additionally" value="vitamins" id="vitamins-field">
+                <input class="checkbox__form" type="checkbox" name="additionally" value="vitamins" id="vitamins-field">
                 <span class="checkbox__icon"></span>
-                <label class="form__desc form__desc__color-add" for="vitamins-field">витамины</label>
+                <label class="checkbox__form-desc checkbox__form-desc--color-add" for="vitamins-field">витамины</label>
               </li>
             </ul>
-            <button class="button-form" type="submit">отправить заявку</button>
-            <p class="mandatory__subheading">* — Обязательные поля</p>
+            <button class="cat-profile__button" type="submit">отправить заявку</button>
+            <p class="cat-profile__mandatory-subheading">* — Обязательные поля</p>
           </div>
         </form>
       </section>
-      <footer class="page-footer">
-        <div class="footer-inform__wrapper">
-          <div class="footer__inform footer__index">
-            <b class="inform__title">Приглашаем к сотрудничеству дилеров!</b>
-            <p class="inform__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <footer class="footer">
+        <div class="footer__wrapper-inform-box">
+          <div class="footer__inform-box">
+            <b class="footer__title-inform">Приглашаем к сотрудничеству дилеров!</b>
+            <p class="footer__address-inform">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
-          <img class="map__image" src="https://via.placeholder.com/150x150" alt="map" width="320" height="362">
+          <img class="footer__map" src="https://via.placeholder.com/150x150" alt="map" width="320" height="362">
         </div>
         <div class="footer__wrapper">
           <img class="footer__logo" src="https://via.placeholder.com/150x150" alt="location" width="128" height="24">
-          <div class="page-footer__social">
+          <div class="social">
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link--vkontakte" href=""><img src="https://via.placeholder.com/150x150" alt="Мы в Вконтакте" width="22" height="13"></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href=""><img src="https://via.placeholder.com/150x150" alt=" Мы в Инстаграме" width="16" height="16"></a>
+                <a class="social__link social__link--instagram" href=""><img src="https://via.placeholder.com/150x150" alt="Мы в Инстаграме" width="16" height="16"></a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--facebook" href=""><img src="https://via.placeholder.com/150x150" alt="Мы в Фейсбуке" width="22" height="22"></a>
               </li>
             </ul>
           </div>
-          <div class="page-footer__copyright copyright">
-            <b>HTML Academy</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/150x150" alt="HTML Academy" width="27" height="34"></a>
+          <div class="footer__copyright">
+            <b class="footer__copyright__title">HTML Academy</b>
+            <a class="footer__copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/150x150" alt="HTML Academy" width="27" height="34"></a>
           </div>
         </div>
       </footer>
