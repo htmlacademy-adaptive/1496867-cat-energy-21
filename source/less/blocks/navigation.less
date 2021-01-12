@@ -1,0 +1,43 @@
+.navigation__block-icons {
+  .center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 66px;
+}
+.navigation__burger {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 16px;
+    z-index: 3;
+}
+.navigation__burger span{
+  position: absolute;
+  background-color: @title_color;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  top: 7px;
+  transform: scale(0);
+}
+.navigation__burger:before,
+.navigation__burger:after{
+  content: '';
+  background-color: @title_color;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+.navigation__burger:before{
+  top: 0;
+  transform: rotate(45deg);
+  top: 7px;
+
+}
+.navigation__burger:after{
+  bottom: 0;
+  transform: rotate(-45deg);
+  bottom: 7px;
+}

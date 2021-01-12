@@ -1,0 +1,54 @@
+.additional-goods__title{
+  .font__size(22px, 22px); /*Не понимаю, тут должен быть размер 24px на  24px, но тогда width становиться больше чем в макете на 20px*/
+  color: @title_color;
+  padding-left: 20px;
+  padding-right: 22px;
+  margin-bottom: 36px;
+}
+.additional-goods__wrapper-line-date{
+  .center__no-frame;
+}
+.additional-goods__line-date{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.additional-goods__middle-line {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: @basic_color;
+}
+.additional-goods__wrapper{
+  .center;
+}
+.additional-goods__list{
+  border-top: 1px solid @special_grey;
+  .li-none;
+}
+.additional-goods__item{
+  border-bottom: 1px solid @special_grey;
+}
+.additional-goods__subtitle-product{
+  .font__size(16px, 16px);
+  color: @special_dark-grey-add;
+  text-transform: uppercase;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+.additional-goods__label-product {
+  .font__size(14px, 14px);
+  .font__arial;
+  margin-bottom: 15px;
+}
+.additional-goods__value-product {
+  .font__size(14px, 14px);
+  .font__arial;
+  margin-bottom: 15px;
+}
+.additional-goods__row-product{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
